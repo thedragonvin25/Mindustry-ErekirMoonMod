@@ -18,6 +18,7 @@
 	"incinerateNonBuildable": true,
 	"unitCapModifier": 15,
 	"isFirstTier": true,
+	"squareSprite": false,
 	  "research": {
     "root": true,
     "name": "Erekir Moon",
