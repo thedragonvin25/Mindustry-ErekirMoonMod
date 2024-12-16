@@ -1,0 +1,14 @@
+sector: 55
+planet: erekir-moon
+localizedName: Mesa
+description: A massive mining site for tungsten. Capture enemy cores to gain access to it and research its uses. 
+difficulty: 3
+research: {
+  parent: cavern
+      objectives: [
+        {
+            type: SectorComplete
+            preset: cavern
+        }]
+}
+alwaysUnlocked: false

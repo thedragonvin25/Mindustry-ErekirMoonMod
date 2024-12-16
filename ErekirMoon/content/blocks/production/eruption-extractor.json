@@ -1,0 +1,22 @@
+{
+	"localizedName": "Eruption Extractor",
+	"type": SolidPump,
+	"category": production,
+	"requirements": [
+		cobalt / 150,
+		graphite / 60,
+		oxide / 30,
+		beryllium / 30
+	],
+	"attribute": heat,
+	"baseEfficiency": 0,
+	"rotateSpeed": 2.8,
+	"result": slag,
+	"description": "Extracts slag from hot cracks.",
+	"size": 2,
+	"pumpAmount": 1.333333,
+	"liquidCapacity": 300,
+	"consumes": {
+		"power": 1.5
+	}
+}

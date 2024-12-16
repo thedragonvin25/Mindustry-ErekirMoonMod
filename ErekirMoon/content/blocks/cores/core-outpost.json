@@ -1,0 +1,28 @@
+{
+	"type": CoreBlock,
+	"localizedName": "Core: Outpost",
+	"itemCapacity": 5000,
+	"requirements": [
+		cobalt / 800,
+		graphite / 600,
+		silicon / 500
+	],
+	"unitType": scout,
+	"category": effect,
+	"health": 4500,
+	"size": 4,
+	"thrusterLength": 8.5,
+	"armor": 5,
+	"alwaysUnlocked": true,
+	"requiresCoreZone": true,
+	"incinerateNonBuildable": true,
+	"unitCapModifier": 15,
+	"isFirstTier": true,
+	  "research": {
+    "root": true,
+    "name": "Erekir Moon",
+	"planet": "erekir-moon",
+    "requiresUnlock": false
+  },
+	"description": "Core of the base. Fairly armored. Once destroyed, the sector is lost."
+}

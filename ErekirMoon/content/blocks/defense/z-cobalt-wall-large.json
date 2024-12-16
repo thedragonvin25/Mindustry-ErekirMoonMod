@@ -1,0 +1,16 @@
+{
+	"localizedName": "Large Cobalt Wall",
+	"type": Wall
+	"description": "Protects structures from enemy projectiles."
+	"category": defense,
+	"requirements": [
+		cobalt / 24
+	],
+	"armor": 1,
+	"health": 1800,
+	"size": 2,
+	"breakable": true,
+		  	"research": {
+"parent": "cobalt-wall"
+}
+}

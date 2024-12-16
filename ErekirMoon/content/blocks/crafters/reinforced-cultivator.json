@@ -1,0 +1,42 @@
+{
+	"localizedName": "Reinforced Cultivator",
+	"description": Reused technology. Outputs neoplasm liquid. Efficiency increases in wet environments.",
+	"type": AttributeCrafter,
+	"size": 2,
+	"requirements": [
+		beryllium / 200,
+		graphite / 50
+	],
+	"hasLiquids": true,
+	"consumes": {
+		"power": 3.5
+	},
+	"category": production,
+	"baseEfficiency": 1,
+	"outputLiquid": neoplasm / 0.11,
+	"attribute": water,
+	"displayEfficiencyScale": 0.5,
+	"drawer": {
+		"type": DrawMulti,
+		"drawers": [
+			{
+				"type": DrawRegion,
+				"suffix": "-bottom"
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": neoplasm
+			},
+			{
+				"type": DrawDefault
+			},
+			{
+				"type": DrawCultivator
+			},
+			{
+				"type": DrawRegion,
+				"suffix": "-top"
+			}
+		]
+	}
+}

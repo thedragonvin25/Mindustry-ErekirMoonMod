@@ -1,0 +1,13 @@
+{
+	"type": Conveyor,
+	"localizedName": "Flume",
+	"category": distribution,
+	"description": "Looks fancy.",
+	"requirements": [
+		cobalt / 1,
+		beryllium / 1
+	],
+	"speed": 0.08,
+	"displayedSpeed": 11,
+	"health": 90
+}

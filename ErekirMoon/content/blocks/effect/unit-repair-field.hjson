@@ -1,0 +1,39 @@
+"type": "RepairTower",
+	"localizedName": "Unit Repair Field",
+		"description": "Slowly repairs nearby friendly units with the decaying heat of cobalt.",
+  researchCostMultiplier: 0.2,
+  "health": 450,
+  "size": 1,
+  "range": 40,
+  "hasPower": true,
+  hasLiquids: false
+  hasItems: true
+  healAmount: 0.5
+  consumes: {
+    power: 1
+	    items: {
+    "items": [
+      "cobalt/1"
+    ]
+    }
+  }
+  category: units
+requirements: [
+    graphite/90
+    beryllium/40
+    silicon/15
+]
+research: {
+    parent: "core-outpost",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "mesa"
+        }
+    ]
+}
+researchCost: [
+    graphite/240
+    beryllium/90
+    silicon/30
+  ]

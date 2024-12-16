@@ -1,0 +1,20 @@
+{
+	"localizedName": "Cobalt Battery",
+	"type": BeamNode,
+	"consumesPower": true,
+	"buildVisibility": hidden,
+	"category": logic,
+	"outputsPower": true,
+	"size": 2,
+	"health": 500,
+	"range": 0,
+	"consumes": {
+		"powerBuffered": 9000
+	},
+	"buildCostMultiplier": 2250,
+	"requirements": [
+		cobalt / 60
+	],
+	"description": "Stores a significant amount of power. Can be charged on a payload loader.",
+	"research": cobalt
+}

@@ -1,0 +1,14 @@
+{
+	"localizedName": "Pneumatic Pump",
+	"type": pump,
+	"requirements": [
+		cobalt / 20
+	],
+	"description": "Pumps more liquid than mechanical pump. Does not require power.",
+	"pumpAmount": 0.1667,
+	"category": liquid,
+	  "researchCostMultiplier": 0.2,
+					  	"research": {
+"parent": "core-outpost"
+}
+}

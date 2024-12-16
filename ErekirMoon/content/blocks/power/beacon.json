@@ -1,0 +1,17 @@
+{
+	"type": LongPowerNode,
+	"hasPower": true,
+	"localizedName": "Beacon",
+	"requirements": [
+		surge-alloy / 30,
+	],
+	"maxNodes": 2,
+	"laserRange": 102.5,
+	"laserColor2": ffd9c2,
+	"schematicPriority": -15,
+	"category": logic,
+	"size": 2,
+	"laserScale": 0.8,
+	"buildCostMultiplier": 2250,
+	"description": "Links power over long distances."
+}

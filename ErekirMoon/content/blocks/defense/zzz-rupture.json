@@ -1,0 +1,96 @@
+{
+  "type": "ItemTurret",
+  "localizedName": "Rupture",
+  "description": "Fires high-velocity bullets at air enemies.",
+  "health": 2000,
+  "shake": 2,
+  "size": 4,
+  "reload": 6,
+  "range": 400,
+  "shootSound": "bolt",
+  "recoil": 4.2,
+  "coolantMultiplier": 3,
+  "shootCone": 20,
+  "targetGround": false,
+  "category": logic,
+  "inaccuracy": 6,
+  "shoot": {
+    "type": "ShootAlternate",
+    "spread": 9,
+    "barrels": 4,
+    "shots": 4
+  },
+  "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "reinforced-"
+  },
+"consumes": {
+  "liquids": [
+    nitrogen/0.2
+  ]
+}
+"coolant": {
+  "type": "ConsumeLiquid",
+  "liquid": "water",
+  "amount": 0.25
+}
+  "shootWarmupSpeed": 0.08,
+  "rotateSpeed": 4,
+  "ammoTypes": {
+    "tungsten": {
+      "pierceArmor": false,
+	  "collidesGround": false,
+      "speed": 18,
+      "trailColor": "FFD9D9FF",
+      "trailParam": 4,
+      "trailLength": 10,
+      "trailWidth": 2,
+      "trailEffect": "none",
+      "shrinkY": 0,
+      "shrinkX": 0,
+      "height": 16,
+      "width": 10,
+      "damage": 25,
+      "lifetime": 22.22,
+      "hitSize": 12,
+      "shootEffect": "shootSmokeDisperse",
+      "hitEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 9,
+            "lifetime": 30,
+            "length": 85,
+            "baseLength": 20,
+            "cone": -30,
+            "lenFrom": 7,
+            "lenTo": 0,
+            "colorFrom": "FFD9D9FF",
+            "colorTo": "FFD9D9FF"
+          },
+          {
+            "type": "ParticleEffect",
+            "particles": 9,
+            "length": 70,
+            "lifetime": 46,
+            "cone": 60,
+            "colorFrom": "FFD9D9FF",
+            "colorTo": "FFD9D9FF",
+            "sizeFrom": 5,
+            "sizeTo": 0
+          }
+        ]
+      },
+      "frontColor": "fffffFF",
+      "backColor": "FFD9D9FF"
+    }
+  },
+  "requirements": [
+    "cobalt/800",
+    "silicon/500",
+    "thorium/300",
+    "carbide/100"
+  ]
+}

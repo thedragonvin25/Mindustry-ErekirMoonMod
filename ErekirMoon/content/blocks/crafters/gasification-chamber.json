@@ -1,0 +1,54 @@
+{
+	"localizedName": "Hydrolysis Chamber",
+	  "researchCostMultiplier": 0.1,
+	"type": GenericCrafter,
+	"size": 2,
+	"health": 500,
+	"category": crafting,
+	"requirements": [
+		beryllium / 200,
+		graphite / 100,
+		tungsten / 100,
+		silicon / 250
+	],
+		"drawer": {
+     "type": "DrawMulti",
+	 "drawers": [
+	  {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+		"suffix": "-bottom"
+      },
+	  {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "hydrogen",
+        "suffix": "-liquid"
+      },
+	  {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+},
+	"hasLiquids": true,
+	"hasItems": true,
+	"consumes": {
+		"items": [
+			cobalt / 2
+		],
+		"power": 0.5
+	},
+	"description": "Concentrates hydrogen from the moisture in the air. Requires cobalt.",
+	"outputLiquid": hydrogen / 0.1,
+		"research": {
+    "parent": "cliff-reducer",
+    "objectives": [
+        {
+            "type": "SectorComplete",
+            "preset": "mesa"
+        }
+    ]
+}
+}

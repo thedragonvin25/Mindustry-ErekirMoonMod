@@ -1,0 +1,20 @@
+{
+	"type": PayloadMassDriver,
+	"category": units,
+	"localizedName": "Reinforced Payload Driver",
+	"description": "Drives payload. Requires a small amount of power.",
+	"requirements": [
+		graphite / 120,
+		cobalt / 200
+	],
+	"regionSuffix": -dark,
+	"size": 3,
+	"reload": 130,
+	"chargeTime": 90,
+	"range": 1400,
+	"maxPayloadSize": 2.5,
+	"fogRadius": 5,
+	"consumes": {
+		"power": 0.016667
+	}
+}

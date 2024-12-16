@@ -1,0 +1,7 @@
+{
+	"localizedName": "Sulfur Wall",
+	"attributes": {
+		"sand": 1.5
+	},
+	"type": StaticWall
+}

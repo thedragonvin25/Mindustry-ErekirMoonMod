@@ -1,0 +1,86 @@
+{
+  "type": "ContinuousLiquidTurret",
+  	"localizedName": "Vaporize",
+		"description": "Shoots 3 independent fire jets at enemy targets. Use with caution.",
+  "researchCostMultiplier": 0.2,
+  "size": 3,
+  "health": 1400,
+  "reload": 65,
+  "shootY": 0,
+  "range": 172,
+  "liquidConsumed": 1,
+  "rotateSpeed": 1.2,	
+  "shoot": {
+    "type": "shootSpread",
+    "shots": 3,
+    "spread": 4
+  },
+  "loopSound": "torch",
+  "ammoTypes": {
+    "oil": {
+      "type": "ContinuousFlameBulletType",
+      "colors": [
+        "F5E258AA",
+        "F5C158ff",
+        "F59658FF",
+        "F56D58FF"
+      ],
+      "damage": 7,
+	  "knockback": 1,
+      "flareWidth": 3,
+      "flareLength": 36,
+      "flareColor": "F56D58FF",
+      "width": 5.5,
+      "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 7,
+        "lifetime": 15,
+        "length": 65,
+        "cone": -360,
+        "strokeFrom": 2.5,
+        "strokeTo": 0,
+        "lenFrom": 8,
+        "lenTo": 0,
+        "colorFrom": "FB6E60FF",
+        "colorTo": "FB9660FF"
+      },
+	  "damageInterval": 6,
+      "divisions": 20,
+      "length": 172,
+      "drawSize": 320,
+      "status": "burning",
+      "statusDuration": 120
+    }
+  },
+  "requirements": [
+    "cobalt/200",
+	"graphite/100",
+    "silicon/100"
+  ],
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "reinforced-",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-nozzle",
+        "moveX": 2,
+        "moveRot": -16,
+        "moveY": 1,
+        "mirror": true,
+        "progress": "warmup"
+      }
+    ]
+  },
+  	"research": {
+    "parent": "leech",
+    "objectives": [
+        {
+            "type": "SectorComplete",
+            "preset": "cavern"
+        }
+    ]
+},
+  "category": "turret"
+}

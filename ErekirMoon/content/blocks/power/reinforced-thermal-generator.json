@@ -1,0 +1,22 @@
+{
+	"localizedName": "Reinforced Thermal Generator",
+	  "researchCostMultiplier": 0.05,
+	"health": 400,
+	"type":  ThermalGenerator,
+	"powerProduction": 1.9,
+	"requirements": [
+		cobalt / 30
+	],
+	"generateEffect": redgeneratespark,
+	"category": power,
+	"effectChance": 0.011,
+	"size": 2,
+	"floating": true,
+	"conductivePower": true,
+	"ambientSound": hum,
+	"ambientSoundVolume": 0.06,
+	"description": "Outputs power on hot tiles.",
+					  	"research": {
+"parent": "cobalt-node"
+}
+}

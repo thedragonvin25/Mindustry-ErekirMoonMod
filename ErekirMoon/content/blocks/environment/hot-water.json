@@ -1,0 +1,14 @@
+{
+	"localizedName": "Hot Water",
+	"type": Floor,
+	"status": burning,
+	"statusDuration": 120,
+	"drownTime": 200,
+	"cacheLayer": water,
+	"albedo": 0.9,
+	"supportsOverlay": true,
+	"liquidDrop": water,
+	"variants": 0,
+	"liquidMultiplier": 0.5,
+	"isLiquid": true
+}

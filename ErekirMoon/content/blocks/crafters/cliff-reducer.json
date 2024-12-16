@@ -1,0 +1,26 @@
+{
+	"localizedName": "Cliff Reducer",
+	"description": "Simultaneously crushes sand and smelts silicon. Requires oil.",
+	  "researchCostMultiplier": 0.1,
+	"requirements": [
+		cobalt / 20,
+		graphite / 10
+	],
+	"size": 3,
+	"type": WallCrafter,
+	"hasItems": true,
+	"hasLiquids": true,
+	"category": crafting,
+	"consumes": {
+		"liquids": [
+			oil / 0.6667
+		],
+		"power": 6
+	},
+	"drillTime": 60,
+	"output": silicon,
+	"attribute": sand
+	"research": {
+"parent": "tar-press"
+},
+}

@@ -1,0 +1,139 @@
+type: ItemTurret
+localizedName: Gatling
+description: Rapidly fires at enemy targets. Requires hydrogen to operate.
+researchCostMultiplier: 0.1,
+size: 3
+health: 1100
+range: 225
+liquidCapacity: 30
+itemCapacity: 30
+rotateSpeed: 1.5
+coolantMultiplier: 5
+reload: 20
+inaccuracy: 6
+shoot: {
+  type: ShootBarrel
+  shots: 3
+  shotDelay: 5
+   barrels: [
+    1, -6, 0, 
+    0, -7, 0, 
+    -1, -5, 0
+  ]
+}
+consumes: {
+  liquids: [
+    hydrogen/0.1
+  ]
+}
+ammoUseEffect: casing2
+shootSound: shootBig
+ammoPerShot: 1
+ammoTypes: {
+  beryllium: {
+   type: BasicBulletType
+   range: 225
+   speed: 4.5
+   shootEffect: shootBig
+   smokeEffect: shootBigSmoke
+   lifetime: 50
+   backColor: f68021
+   damage: 30
+   ammoMultiplier: 2
+   width: 5
+   height: 8
+   trailLength: 3.5
+ },
+   tungsten: {
+   type: BasicBulletType
+   shootEffect: shootBig
+   smokeEffect: shootBigSmoke
+   frontColor: 40FD3D
+   backColor: 7DFD3D
+   trailColor: 9BE556
+   reloadMultiplier: 0.7
+   range: 225
+   ammoMultiplier: 4
+   speed: 4.5
+   lifetime: 50
+   pierce: true
+   pierceCap: 3
+   damage: 40
+   width: 5
+   height: 8
+   trailLength: 3.5
+ },
+    silicon: {
+   type: BasicBulletType
+   shootEffect: shootBig
+   smokeEffect: shootBigSmoke
+   frontColor: 40FD3D
+   backColor: 7DFD3D
+   trailColor: 9BE556
+   reloadMultiplier: 1.3
+   range: 257
+   ammoMultiplier: 5
+   speed: 5
+   lifetime: 51.4
+   damage: 30
+   rangeChange: 32
+   homingPower: 0.12
+   width: 5
+   height: 8
+   trailLength: 3.5
+ }
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: water
+  amount: 0.25
+}
+category: turret
+research: {
+    parent: vaporize
+    objectives: [
+        {
+            type: SectorComplete
+            preset: mesa
+        }
+    ]
+}
+recoil: 3
+recoils: 3
+drawer: {
+    type: DrawTurret
+	basePrefix: reinforced-
+    parts: [
+        {
+            type: RegionPart
+            suffix: -barrel-1
+            x: 0
+            moveY: 0
+			moveRot: 18
+            progress: warmup
+        }
+		{
+            type: RegionPart
+            suffix: -barrel-3
+            x: 0
+            moveY: 0
+			moveRot: -18
+            progress: warmup
+        }
+		{
+            type: RegionPart
+            suffix: -barrel-2
+            recoilIndex: 0
+            x: 0
+            moveY: -2
+            progress: recoil
+        }
+    ]
+}
+buildVisibility: shown
+requirements: [
+  graphite/250
+  beryllium/200
+  tungsten/160
+  silicon/300
+]

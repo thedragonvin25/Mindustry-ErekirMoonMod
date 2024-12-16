@@ -1,0 +1,17 @@
+{
+	"localizedName": "Pipe Router",
+	"type": LiquidRouter,
+	"requirements": [
+		graphite / 8,
+		cobalt / 4
+	],
+	"category": liquid,
+	"liquidPadding": 0.75,
+	"liquidCapacity": 30,
+	"underBullets": true,
+	"solid": false,
+	"description": "Distributes liquids.",
+				  	"research": {
+"parent": "pipe-junction"
+}
+}

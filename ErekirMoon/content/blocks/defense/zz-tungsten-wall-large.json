@@ -1,0 +1,17 @@
+{
+	"localizedName": "Large Reinforced Tungsten Wall",
+	"type": Wall
+	"description": "Protects structures from enemy projectiles."
+	"category": defense,
+	"requirements": [
+		tungsten / 24
+		cobalt / 12
+	],
+	"armor": 15,
+	"health": 2880,
+	"size": 2,
+	"breakable": true,
+		  	"research": {
+"parent": "zz-tungsten-wall"
+}
+}

@@ -1,0 +1,16 @@
+sector: 87
+planet: erekir-moon
+localizedName: Holdout
+description: Large enemy presence detected in this sector. Prepare for an full-on assault. Destroy enemy outposts to get access to more tar pits. Expect a variety of enemy reinforcements.
+difficulty: 6
+research: {
+  parent: mesa
+      objectives: [
+        {
+            type: SectorComplete
+            preset: mesa
+        }]
+}
+alwaysUnlocked: false
+allowLaunchLoadout: false
+captureWave: 15

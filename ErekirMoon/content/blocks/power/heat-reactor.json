@@ -1,0 +1,32 @@
+{
+  "type": "VariableReactor",
+  "researchCostMultiplier": 0.2,
+  "localizedName": "Heat Reactor",
+  "description": "Generates large amounts of power with thermal energy. Requires nitrogen as stablizer.",
+  "health": 2000,
+  "size": 4,
+  "maxHeat": 60,
+  "unstableSpeed": 0.00111111111,
+  "buildVisibility": sandboxOnly,
+  "powerProduction": 75,
+  "effectColor": "90D2FFFF",
+  "hasLiquids": true,
+  "liquidCapacity": 60,
+  "consumes": {
+    "liquids": [
+      "nitrogen/0.4"
+    ]
+  },
+  "requirements": [
+    "cobalt/500",
+	"silicon/200",
+	"graphite/150",
+	"oxide/200"
+  ],
+  "category": "power",
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.25,
+  					  	"research": {
+"parent": "ic_engine"
+}
+}

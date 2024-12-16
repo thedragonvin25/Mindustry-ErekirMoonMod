@@ -1,0 +1,17 @@
+{
+	"type": LiquidJunction,
+	"localizedName": "Pipe Junction",
+	"description": "The junction of 2 liquid lines.",
+	"category": liquid,
+	"underBullets": true,
+	"solid": false,
+		  "researchCostMultiplier": 0.1,
+	"requirements": [
+		cobalt / 8,
+		graphite / 4
+	],
+	"health": 200,
+				  	"research": {
+"parent": "pipe-bridge"
+}
+}

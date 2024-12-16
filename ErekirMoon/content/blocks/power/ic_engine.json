@@ -1,0 +1,69 @@
+{
+  "type": "ConsumeGenerator",
+  "researchCostMultiplier": 0.2,
+  "localizedName": "Internal Combustion Engine",
+  "description": "Burns oil to generate moderate amounts of power.",
+  "health": 1400,
+  "size": 3,
+  "powerProduction": 5.5,
+  "hasLiquids": true,
+  "liquidCapacity": 50,
+  "drawer": {
+     "type": "DrawMulti",
+	 "drawers": [
+	  {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+		"suffix": "-bottom"
+      },
+	  {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "oil",
+        "suffix": "-liquid"
+      },
+	  {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+		"spinSprite": true,
+		"rotateSpeed": 20
+      },
+	  {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      },
+	  {
+        "type": "DrawFlame",
+		"flameColor": "FFC099FF"
+      },
+	  {
+        "type": "DrawParticles",
+        "color": "564132FF",
+        "alpha": 0.4,
+        "blending": "additive",
+        "particleSize": 4,
+        "particleRad": 6,
+        "particles": 23,
+        "fadeMargin": 1,
+        "rotateScl": 4,
+        "particleLife": 40
+      }
+    ]
+},
+  "consumes": {
+    "liquids": [
+      "oil/0.6667"
+    ]
+  },
+  "requirements": [
+    "cobalt/100"
+	"graphite/60",
+  ],
+  "category": "power",
+  "ambientSound": "hum",
+  "ambientSoundVolume": 0.25,
+  					  	"research": {
+"parent": "cobalt-node"
+}
+}

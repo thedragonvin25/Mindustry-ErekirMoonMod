@@ -1,0 +1,11 @@
+{
+	"name": "Erekir Moon",
+	"displayName": "Erekir Moon",
+	"author": "1in602krillions",
+	"description": "bluh bluh",
+	"version": "1.0",
+	"minGameVersion": "146",
+	//balls
+	"dependencies": [ ],
+	"hidden": true
+}

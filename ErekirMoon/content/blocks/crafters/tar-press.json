@@ -1,0 +1,27 @@
+
+{
+	"localizedName": "Tar Press",
+	  "researchCostMultiplier": 0.1,
+	"type": GenericCrafter,
+	"category": crafting,
+	"requirements": [
+		cobalt / 20
+	],
+	"craftTime": 66.667,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"consumes": {
+		"liquid": oil / 0.1667,
+		"power": 0.5
+	},
+	"outputItems": [
+		graphite / 1
+	],
+	"research": {
+"parent": "core-outpost"
+},
+	"description": "Compresses oil into graphite."
+}
+	

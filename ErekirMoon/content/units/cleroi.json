@@ -1,0 +1,10 @@
+		"research": {
+    "parent": "multi-refabricator",
+	    "requiresUnlock": false,
+    "objectives": [
+        {
+            "type": "OnSector",
+            "preset": "mesa"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+	"type": PayloadConveyor,
+	"localizedName": "Payload Conveyor Replica",
+	"description": "Moves payloads, but not as fast as the one on Erekir",
+	"category": units,
+	"requirements": [
+		cobalt / 5,
+		tungsten / 5
+	],
+	"moveTime": 40,
+	"canOverdrive": false,
+	"health": 700,
+	"underBullets": true
+}

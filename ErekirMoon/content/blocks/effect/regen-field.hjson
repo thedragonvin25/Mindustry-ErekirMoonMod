@@ -1,0 +1,42 @@
+  "type": "MendProjector",
+  	"localizedName": "Regen Field",
+		"description": "Repairs damaged structures. Requires hydrogen to operate.",
+    "researchCostMultiplier": 0.2,
+  "health": 550
+  "size": 2,
+  "range": 110,
+  "reload": 300,
+  "phaseColor": "FF7400",
+  "baseColor": "FF6060",
+  "hasPower": true,
+  hasLiquids: true
+  liquidCapacity: 30
+  healPercent: 10
+  phaseBoost: 3
+  phaseRangeBoost: 30
+  consumes: {
+    power: 2
+    liquids: {
+    "liquids": [
+      "hydrogen/0.025"
+    ]
+    }
+  }
+  category: effect
+requirements: [
+    silicon/150
+    tungsten/90
+]
+research: {
+    parent: "unit-repair-field",
+    objectives: [
+        {
+            type: "SectorComplete"
+            preset: "cavern"
+        }
+    ]
+}
+researchCost: [
+    silicon/250
+    tungsten/150
+  ]

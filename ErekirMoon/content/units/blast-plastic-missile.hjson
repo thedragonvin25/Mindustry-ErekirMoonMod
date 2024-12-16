@@ -1,0 +1,89 @@
+type: missile
+controller: MissileAI
+flying: true
+speed: 5
+maxRange: 6.5
+lifetime: 110
+hidden: true
+outlineColor: 431D17
+engineColor: EB9D34
+trailColor: 7dd959
+engineSize: 3.5
+engineOffset: 7
+rotateSpeed: 1.75
+trailLength: 18
+missileAccelTime: 50
+lowAltitude: true
+fogRadius: 6
+health: 300
+allowedInPayloads: false
+useUnitCap: false
+playerControllable: false
+physics: false
+createWreck: false
+createScorch: true
+weapons: [
+    {
+        shootCone: 360
+          mirror: false
+          reload: 180
+          shootOnDeath: true
+          x: 0
+          y: 0
+          
+          bullet:{
+        type: BombBulletType
+		buildingDamageMultiplier: 0.1
+        splashDamageRadius: 50
+        splashDamage: 240
+        instantDisappear: true
+        killShooter: true
+        hittable: false
+        collidesAir: true
+        status: blasted
+   "hitEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "WaveEffect",
+    "lifetime": 40,
+    "sizeFrom": 0,
+    "sizeTo": 50,
+    "interp": "circleOut",
+    "strokeFrom": 40,
+    "strokeTo": 0,
+    "colorFrom": "EB6634",
+    "colorTo": "DA6133"
+    },
+    	{
+	"type": "ParticleEffect",
+    "line": true,
+    "particles": 18,
+    "lifetime": 20,
+    "baseLength": 15,
+    "length": 88,
+    "lenFrom": 8,
+    "lenTo": 3,
+    strokeFrom: 7
+    strokeTo: 0
+    "lightColor": "C75A24",
+    "colorFrom": "EB6634",
+    "colorTo": "DA6133"
+	},
+  	{
+	"type": "ParticleEffect",
+    "particles": 15,
+    "length": 85,
+    "lifetime": 40,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "EB6634",
+    "colorTo": "DA6133",
+    "sizeFrom": 5,
+    "sizeTo": 0
+	},
+    ]
+   }
+    }
+    }
+]

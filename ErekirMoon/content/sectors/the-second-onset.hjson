@@ -1,0 +1,9 @@
+sector: 33
+planet: erekir-moon
+localizedName: The Second Onset
+description: Begin the conquest of Erekir's moon. Research any tech available.
+difficulty: 1
+research: {
+  parent: core-outpost
+}
+alwaysUnlocked: true

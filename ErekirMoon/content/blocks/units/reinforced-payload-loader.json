@@ -1,0 +1,18 @@
+{
+	"type": PayloadLoader,
+	"category": units,
+	"localizedName": "Reinforced Payload Loader",
+	"description": "Loads payload.",
+	"regionSuffix": -dark,
+	"hasPower": true,
+	"consumes": {
+		"power": 0.016667
+	},
+	"size": 3,
+	"fogRadius": 5,
+	"requirements": [
+		cobalt / 60,
+		silicon / 40,
+		oxide / 10
+	]
+}

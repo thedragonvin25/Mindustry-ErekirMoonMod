@@ -1,0 +1,35 @@
+{
+	"speed": 0,
+	"description": "go away",
+	"type": missile,
+	"hidden": false,
+	"hitSize": 1,
+	"lifetime": 0,
+	"health": 1,
+	"range": 3,
+	"weapons": [
+		{
+			"shootOnDeath": true,
+			"reload": 24,
+			"shootCone": 1,
+			"bullet": {
+				"type": LiquidBulletType,
+				"liquid": slag,
+				"puddleSize": 30,
+				"damage": 50,
+				"collidesAir": false,
+				"instantDisappear": true,
+				"speed": 0,
+				"collides": false,
+				"collidesTiles": false
+			}
+		}
+	],
+	"abilities": [
+		{
+			"type": LiquidExplodeAbility,
+			"liquid": slag,
+			"amount": 50
+		}
+	]
+}

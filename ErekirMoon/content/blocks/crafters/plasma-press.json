@@ -1,0 +1,49 @@
+{
+	"localizedName": "Osmosis Centrifuge",
+	"type": GenericCrafter,
+	"category": crafting,
+	"requirements": [
+		oxide / 10,
+		silicon / 25,
+		cobalt / 80
+	],
+	"liquidCapacity": 60,
+	"consumes": {
+		"liquid": neoplasm / 0.2083333,
+		"power": 0.7
+	},
+	"outputLiquid": water / 0.5,
+	"description": "Drains water in neoplasm. Water output and neoplasm flow are directly proportional.",
+	"size": 2,
+	"hasLiquids": true,
+	"hasPower": true,
+	"drawer": {
+		"type": DrawMulti,
+		"drawers": [
+			{
+				"type": DrawRegion,
+				"suffix": -bottom
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": neoplasm,
+				"padLeft": 6,
+				"padRight": 6
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": neoplasm,
+				"padTop": 6,
+				"padBottom": 6
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": water,
+				"padding": 5
+			},
+			{
+				"type": DrawRegion
+			}
+		]
+	}
+}

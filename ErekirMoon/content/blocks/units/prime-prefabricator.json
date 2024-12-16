@@ -1,0 +1,51 @@
+{
+	"type": UnitFactory,
+		  "researchCostMultiplier": 0.4,
+	"requirements": [
+		cobalt / 500,
+		thorium / 300,
+		silicon / 200,
+		graphite / 300,
+		oxide / 200
+	],
+"consumes": {
+"power": 7.5,
+"liquids": [
+"hydrogen/0.2",
+"nitrogen/0.2",
+]
+},
+	"description": "Constructs all tier 3 units.",
+	"size": 5,
+	"plans": [
+		{
+			"unit": precept,
+			"requirements": [
+				silicon / 300,
+				tungsten / 150,
+				thorium / 180
+			],
+			"time": 2400
+		},
+		{
+			"unit": anthicus,
+			"requirements": [
+				silicon / 360,
+				tungsten / 240,
+				thorium / 180
+			],
+			"time": 3600
+		},
+		{
+			"unit": obviate,
+			"requirements": [
+				silicon / 320,
+				tungsten / 160,
+				thorium / 300
+			],
+			"time": 3000
+		}
+	],
+	"localizedName": "Prime Prefabricator",
+        "category": logic
+}

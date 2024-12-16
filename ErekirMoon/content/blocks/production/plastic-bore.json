@@ -1,0 +1,29 @@
+{
+	"localizedName": "Plastic Bore",
+	"type": BeamDrill,
+	"category": production,
+	"description": "Drills wall ores with a strong plasma beam. Optionally uses nitrogen as booster."
+	"requirements": [
+		beryllium / 30,
+		plastanium / 10
+	],
+	  "consumes": {
+    "power": 0.183333,
+    "liquid": {
+      "liquid": "nitrogen",
+      "amount": 0.004167,
+      "booster": true,
+      "optional": true
+    }
+  },
+	"optionalBoostIntensity": 2.5,
+	"tier": 7,
+	"range": 5,
+	"size": 2,
+	"drillTime": 110,
+		  "researchCostMultiplier": 0.05,
+					  	"research": {
+"parent": "solar-bore"
+}
+}
+	

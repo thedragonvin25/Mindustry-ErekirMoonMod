@@ -1,0 +1,113 @@
+{
+  "type": "ItemTurret",
+	"localizedName": "Spread",
+		"description": "Shoots multiple flaks at enemy targets at close range. ",
+  "researchCostMultiplier": 0.2,
+  "squareSprite": false,
+  "size": 3,
+  "health": 700,
+  "reload": 30,
+  "range": 120,
+  "velocityRnd": 0.25,
+  "shoot": {
+    "type": "shootSpread",
+    "shots": 25,
+    "spread": 6
+  },
+"drawer": {
+    "type": "drawTurret",
+    "basePrefix": "reinforced-",
+    "parts": [	
+      {
+        "type": "RegionPart",
+        "suffix": "-front",
+        "moveX": 0,
+        "moveRot": -15,
+        "moveY": 0,
+        "mirror": true,
+        "progress": {
+          "type": "reload",
+          "op": "delay",
+          "amount": 0.3
+        }
+      }
+    ]
+  },
+  "shootY": 6,
+  "shootCone": 16,
+  "recoil": 3,
+  "rotateSpeed": 2,
+  "shootSound": "shotgun",
+  "ammoTypes": {
+    "graphite": {
+      "type": "basicBulletType",
+      "lifetime": 12,
+	  "knockback": 2,
+      "speed": 9,
+      "damage": 25,
+	  "splashDamageRadius": 25,
+	  "splashDamage": 20,
+      "height": 20,
+      "width": 25,
+      "trailColor": "FECC80FF",
+      "trailLength": 4,
+      "trailWidth": 3,
+      "despawnHit": true,
+      "hitEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 10,
+            "lifetime": 45,
+            "interp": "circleOut",
+            "length": 75,
+            "cone": -40,
+            "strokeTo": 0,
+            "lightColor": "FEEB80FF",
+            "lenFrom": 8,
+            "lenTo": 0,
+            "strokeFrom": 2,
+            "colorFrom": "FEB780FF",
+            "colorTo": "FE9980FF"
+          },
+          {
+            "type": "ExplosionEffect",
+            "waveColor": "FEB780FF",
+            "sparkColor": "FE9980FF",
+            "smokes": 4,
+            "smokeSize": 2,
+            "smokeSizeBase": 1,
+            "smokeRad": 36,
+            "waveLife": 10,
+            "waveStroke": 4.1,
+            "waveRad": 25,
+            "waveRadBase": 2.0,
+            "sparkLen": 7,
+            "sparks": 5
+          }
+        ]
+      },
+      "frontColor": "ffffffff",
+      "backColor": "66B1FFFF",
+	  "smokeEffect": "shootSmokeSquareSparse",
+	  "shootEffect": "shootBigColor"
+	}
+    }, 
+  "requirements": [
+    "cobalt/300",
+    "graphite/100",
+	"silicon/100"
+  ],
+	"research": {
+    "parent": "leech",
+    "objectives": [
+        {
+            "type": "OnSector",
+            "preset": "cavern"
+        }
+    ]
+},
+  "category": "turret"
+}

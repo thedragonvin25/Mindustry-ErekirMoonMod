@@ -1,0 +1,50 @@
+{
+	"localizedName": "Fractional Distiller",
+	"type": GenericCrafter,
+	"size": 3,
+	"category": crafting,
+	"requirements": [
+		cobalt / 320,
+		beryllium / 180,
+		plastanium / 80,
+		oxide / 20
+	],
+	"hasLiquids": true,
+	"ambientSound": extractLoop,
+	"liquidCapacity": 80,
+	"drawer": {
+		"type": DrawMulti,
+		"drawers": [
+			{
+				"type": DrawRegion,
+				"suffix": -bottom
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": nitrogen,
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": water,
+				"padTop": 11,
+				"padBottom": 11
+			},
+			{
+				"type": DrawRegion
+			},
+			{
+				"type": DrawGlowRegion,
+				"alpha": 0.7,
+				"color": c4bdf3,
+				"glowIntensity": 0.3,
+				"glowScale": 3
+			}
+		]
+	},
+	"consumes": {
+		"power": 5.333333,
+		"liquid": water / 3
+	},
+	"description": "Distills nitrogen from the atmosphere. Requires large amounts of water as coolant. Output and coolant flow are directly proportional.",
+	"outputLiquid": nitrogen / 0.333333
+}

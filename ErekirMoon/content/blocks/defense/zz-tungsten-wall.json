@@ -1,0 +1,18 @@
+{
+	"localizedName": "Reinforced Tungsten Wall",
+	"type": Wall
+	"description": "Protects structures from enemy projectiles."
+	"category": defense,
+	"requirements": [
+		tungsten / 6
+		cobalt / 3
+	],
+	"armor": 15,
+	"health": 720,
+	"size": 1,
+	"breakable": true,
+		  "researchCostMultiplier": 0.1,
+	  	"research": {
+"parent": "cobalt-wall-large"
+}
+}

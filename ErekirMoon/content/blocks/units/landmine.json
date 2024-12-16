@@ -1,0 +1,18 @@
+{
+	"localizedName": "Landmine",
+	"type": ShockMine,
+	"buildCostMultiplier": 2250,
+	"description": "Still useless.",
+	"hasShadow": false,
+	"requirements": [
+		sulfur / 20,
+		cobalt / 30
+	],
+	"health": 200,
+	"damage": 30,
+	"tileDamage": 7,
+	"length": 10,
+	"category": logic,
+	"size": 2,
+	"tendrils": 4
+}

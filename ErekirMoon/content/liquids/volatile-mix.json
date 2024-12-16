@@ -1,0 +1,17 @@
+{
+	"type": Liquid,
+	"localizedName": "Volatile Mix",
+	"description": "So explosive and flammable that it spontaneously combusts.",
+	"flammability": 0.5,
+	"explosiveness": 2,
+	"heatCapacity": 0.7,
+	"viscosity": 0.7,
+	"canStayOn": [
+		water
+	],
+	"effect": blasted,
+	"barColor": efcb53,
+	"color": efcb53,
+	"boilPoint": 0.7,
+	"gasColor": efcb53
+}

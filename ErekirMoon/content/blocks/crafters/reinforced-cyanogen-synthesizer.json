@@ -1,0 +1,48 @@
+{
+	"localizedName": "Reinforced Cyanogen Synthesizer",
+	"category": crafting,
+	"type": HeatCrafter,
+	"squareSprite": false,
+	"description": "Synthesizes cyanogen. Requires nitrogen and graphite.",
+	"requirements": [
+		cobalt / 120,
+		silicon / 100,
+		thorium / 30
+	],
+	"consumes": {
+		"items": [
+			graphite / 1
+		],
+		"power": 1.5,
+		"liquids": [
+			nitrogen / 0.01667
+		]
+	},
+	"size": 3,
+	"outputLiquid": cyanogen / 0.05,
+	"ambientSound": extractLoop,
+	"heatRequirement": 6,
+	"drawer": {
+		"type": DrawMulti,
+		"drawers": [
+			{
+				"type": DrawRegion,
+				"suffix": "-bottom"
+			},
+			{
+				"type": DrawLiquidTile,
+				"drawLiquid": nitrogen
+			},
+			{
+				"type": DrawDefault
+			},
+			{
+				"type": DrawHeatInput
+			},
+			{
+				"type": DrawHeatRegion,
+				"suffix": "-heat-top"
+			}
+		]
+	}
+}

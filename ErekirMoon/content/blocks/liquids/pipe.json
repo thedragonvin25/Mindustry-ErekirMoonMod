@@ -1,0 +1,18 @@
+{
+	"localizedName": "Pipe",
+	"type": Conduit,
+	"health": 90,
+	"category": liquid,
+	"description": "Transports liquids. Accepts liquids from both sides.",
+	"liquidCapacity": 16,
+	"liquidPressure": 1.1,
+	"junctionReplacement": pipe-junction,
+	"rotBridgeReplacement": pipe-bridge,
+		  "researchCostMultiplier": 0.1,
+	"requirements": [
+		cobalt / 2
+	],
+			  	"research": {
+"parent": "core-outpost"
+}
+}

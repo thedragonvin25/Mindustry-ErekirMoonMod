@@ -1,0 +1,41 @@
+{
+  "type": "Drill",
+  "localizedName": "Beam Drill",
+  "description": "Drills ores at high rates with lasers. Takes a long time to reach peak efficiency. Can be boosted with hydrogen.",
+  "size": 3,
+  "category": logic,
+  "tier": 6,	
+  "rotateSpeed": 10,	
+  "drillTime": 450,
+  "liquidBoostIntensity": 1.8,
+  "drawRim": false,
+  "warmupSpeed": 0.002,
+  "updateEffectChance": 0.1,
+  "hasLiquids": true,
+  "liquidCapacity": 25,
+  "hardnessDrillMultiplier": 66,
+  "consumes": {
+    "power": 6,
+    "liquid": {
+      "liquid": "hydrogen",
+      "amount": 0.0666666666666666,
+      "booster": true,
+      "optional": true
+    }
+  },
+	"requirements": [
+        cobalt / 200
+		beryllium / 120
+		tungsten / 180,
+		oxide/ 50
+	],
+		"research": {
+    "parent": "collision-drill",
+    "objectives": [
+        {
+            "type": "CompleteSector",
+            "preset": "holdout"
+        }
+    ]
+}
+}

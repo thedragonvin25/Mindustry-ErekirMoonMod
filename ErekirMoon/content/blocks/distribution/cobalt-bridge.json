@@ -1,0 +1,16 @@
+{
+	"type": DuctBridge,
+	"localizedName": "Cobalt Bridge",
+	"health": 90,
+	"size": 1,
+	"category": distribution,
+	"requirements": [
+		cobalt / 20
+	],
+	"speed": 4,
+	"description": "The typical bridge.",
+	  "researchCostMultiplier": 0.1,
+		  	"research": {
+"parent": "cobalt-conveyor"
+}
+}

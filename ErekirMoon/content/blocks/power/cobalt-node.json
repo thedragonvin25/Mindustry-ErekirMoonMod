@@ -1,0 +1,21 @@
+{
+	"localizedName": "Cobalt Node",
+	"type": BeamNode,
+	"consumesPower": true,
+	"outputsPower": true,
+	"size": 1,
+	"health": 90,
+	"range": 10,
+	"consumes": {
+		"powerBuffered": 1000
+	},
+	"requirements": [
+		cobalt / 8
+	],
+	"category": power,
+	"description": "Transmit power to other blocks orthogonally. Stores a small amount of power.",
+	"research": cobalt,
+				  	"research": {
+"parent": "core-outpost"
+}
+}

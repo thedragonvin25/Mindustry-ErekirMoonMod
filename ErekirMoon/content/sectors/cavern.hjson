@@ -1,0 +1,13 @@
+sector: 10
+planet: erekir-moon
+localizedName: Cavern
+description: Medium enemy presence detected in this area. Mine beryllium and produce Stells and Meruis in order navigate through the rough terrain.
+difficulty: 2
+research: {
+  parent: the-second-onset
+      objectives: [
+        {
+            type: SectorComplete
+            preset: the-second-onset
+        }]
+}

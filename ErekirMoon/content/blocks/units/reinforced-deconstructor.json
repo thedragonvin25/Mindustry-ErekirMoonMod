@@ -1,0 +1,19 @@
+{
+	"type": PayloadDeconstructor,
+	"localizedName": "Reinforced Deconstructor",
+	"description": "Deconstructs.",
+	"size": 3,
+	"consumes": {
+		"power": 1.166667
+	},
+	"itemCapacity": 50,
+	"regionSuffix": -dark,
+	"category": units,
+	"requirements": [
+		cobalt / 90,
+		graphite / 70,
+		silicon / 50,
+		beryllium / 30,
+		tungsten / 10
+	]
+}

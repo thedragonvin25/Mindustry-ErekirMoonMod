@@ -1,0 +1,44 @@
+{
+	"localizedName": "Plastanium Synthesizer",
+	"type": GenericCrafter,
+	"size": 3,
+	"health": 1500,
+	"category": crafting,
+	"liquidCapacity": 500,
+	"requirements": [
+		tungsten / 320,
+		graphite / 240,
+		silicon / 180,
+		oxide / 120
+	],
+	"hasLiquids": true,
+	"consumes": {
+		"liquids": [
+			slag / 0.666667,
+			oil / 0.875
+		],
+		"power": 4
+	},
+	"description": "Synthesizes plastanium from oil. Requires slag and power.",
+	"outputItems": [
+		plastanium / 2
+	],
+	"craftTime": 80,
+	"drawer": {
+		"type": DrawMulti,
+		"drawers": [
+			{
+				"type": DrawRegion,
+				"suffix": -bottom
+			},
+			{
+				"type": DrawLiquidTile,
+				"padding": 1,
+				"drawLiquid": slag
+			},
+			{
+				"type": DrawDefault
+			}
+		]
+	}
+}

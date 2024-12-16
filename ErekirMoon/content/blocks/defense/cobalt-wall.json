@@ -1,0 +1,17 @@
+{
+	"localizedName": "Cobalt Wall",
+	"type": Wall
+	"description": "Protects structures from enemy projectiles."
+	"category": defense,
+	"requirements": [
+		cobalt / 6
+	],
+	"armor": 1,
+	"health": 450,
+	"size": 1,
+	"breakable": true,
+		  "researchCostMultiplier": 0.1,
+	  	"research": {
+"parent": "core-outpost"
+}
+}

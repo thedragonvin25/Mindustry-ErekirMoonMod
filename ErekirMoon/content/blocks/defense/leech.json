@@ -1,0 +1,71 @@
+{
+  "type": "ItemTurret",
+  "researchCostMultiplier": 0.1,
+	"localizedName": "Leech",
+		"description": "Fires twisting bullets at enemy targets.",
+  "size": 1,
+  "health": 300,
+  "maxAmmo": 25,
+  "ammoPerShot": 1,
+  "reload": 30,
+  "range": 135,
+  "targetAir": true,
+  "shoot": {
+    "type": ShootHelix
+  },
+  "targetGround": true,
+  "rotateSpeed": 3,
+  "inaccuracy": 5,
+  "ammoTypes": {
+    "cobalt": {
+      "type": "BasicBulletType",
+      "damage": 15,
+      "speed": 3,
+      "lifetime": 45,
+      "height": 12,
+      "width": 7,
+      "trailColor": "F5A290FF",
+      "frontColor": "F0C2B8FF",
+      "hitColor": "F5E4E0FF",
+      "smokeEffect": "hitBulletBig"
+    },
+	"tungsten": {
+      "type": "BasicBulletType",
+	  "ammoMultiplier": 4,
+	  "rangeChange": 34,
+      "damage": 25,
+      "speed": 4.5,
+      "lifetime": 45,
+      "height": 14,
+      "width": 7,
+      "trailColor": "F5A290FF",
+      "frontColor": "F0C2B8FF",
+      "hitColor": "F5E4E0FF",
+      "smokeEffect": "hitBulletBig"
+    },
+    "silicon": {
+      "type": "BasicBulletType",
+	  "homingPower": 0.5,
+      "homingRange": 64,
+      "damage": 25,
+      "speed": 3,
+      "lifetime": 45,
+      "height": 12,
+      "width": 7,
+      "trailColor": "F5A290FF",
+      "frontColor": "F0C2B8FF",
+      "hitColor": "F5E4E0FF",
+      "smokeEffect": "hitBulletBig"
+    }
+  },
+  "requirements": [
+    {
+      "item": "cobalt",
+      "amount": 50
+    }
+  ],
+  	"research": {
+"parent": "core-outpost"
+},
+  "category": "turret"
+}

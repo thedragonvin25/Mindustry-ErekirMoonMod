@@ -1,0 +1,17 @@
+{
+	"type": StackRouter,
+	"localizedName": "Cobalt Router",
+	"health": 90,
+	"size": 1,
+	"category": distribution,
+	"requirements": [
+		cobalt / 10
+	],
+	"speed": 4,
+	"itemCapacity": 3,
+	"description": "The typical router. Moves 3 items at once.",
+		  "researchCostMultiplier": 0.1,
+			  	"research": {
+"parent": "cobalt-bridge"
+}
+}

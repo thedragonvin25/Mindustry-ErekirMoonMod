@@ -1,0 +1,6 @@
+{
+	"localizedName": Cobalt,
+	"type": OreBlock,
+	"itemDrop": cobalt,
+	"wallOre": true
+}

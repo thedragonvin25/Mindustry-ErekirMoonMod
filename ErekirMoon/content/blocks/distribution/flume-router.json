@@ -1,0 +1,10 @@
+{
+	"type": router,
+	"localizedName": "Flume Router",
+	"description": "Just as you may have expected, it disintegrates when adjacent factories output items.",
+	"category": distribution,
+	"requirements": [
+		beryllium / 4,
+		graphite / 8
+	]
+}

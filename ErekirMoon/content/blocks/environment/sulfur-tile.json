@@ -1,0 +1,7 @@
+{
+	"localizedName": "Sulfur",
+	"type": Floor,
+	"attributes": {
+		"water": -0.25
+	}
+}

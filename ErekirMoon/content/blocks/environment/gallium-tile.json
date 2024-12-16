@@ -1,0 +1,12 @@
+{
+	"localizedName": "Gallium",
+	"type": Floor,
+	"liquidDrop": gallium,
+	"variants": 0
+	"isLiquid": true,
+	"cacheLayer": mud,
+	"shallow": true,
+	"status": corroded,
+	"statusDuration": 120
+}
+	

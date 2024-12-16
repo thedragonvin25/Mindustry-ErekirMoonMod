@@ -1,0 +1,50 @@
+{
+	"localizedName": "Oxide Crucible",
+	"description": "Oxidizes beryllium by heating it rapidly and reacting it with oxygen. Must be placed on hot surfaces. ",
+	"requirements": [
+		cobalt / 150,
+		beryllium / 150,
+		tungsten / 120,
+		silicon / 200
+	],
+	  "drawer": {
+     "type": "DrawMulti",
+	 "drawers": [
+	  {
+        "type": "DrawDefault"
+      },
+
+	  {
+        "type": "DrawGlowRegion"
+      }
+    ]
+},
+	"size": 3,
+	  "researchCostMultiplier": 0.05,
+	"type": AttributeCrafter,
+	"minEfficiency": 1,
+	"baseEfficiency": 0,
+		"hasPower": true,
+	"hasItems": true,
+	"hasLiquids": true,
+	"category": crafting,
+	"consumes": {
+		"items": [
+			beryllium / 1
+		],
+		"power": 1.666666666666666666666
+	},
+	"outputItems": [
+		oxide / 1
+	],
+	"research": {
+    "parent": "cliff-reducer",
+    "objectives": [
+        {
+            "type": "SectorComplete",
+            "preset": "holdout"
+        }
+    ]
+},
+	"craftTime": 90
+}

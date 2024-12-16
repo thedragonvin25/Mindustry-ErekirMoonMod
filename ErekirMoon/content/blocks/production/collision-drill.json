@@ -1,0 +1,35 @@
+{
+	"localizedName": "Collision Drill",
+	"description": "Drills ores on the ground. Does not require power.",
+	  "researchCostMultiplier": 0.15,
+	"type": BurstDrill,
+	"category": production,
+	"size": 2,
+	"requirements": [
+		silicon / 30,
+		beryllium / 70,
+		graphite / 70
+	],
+	"tier": 6,
+	"shake": 2,
+	"hasItems": true,
+	"drillEffect": {
+		"type": "multiEffect",
+		"effects": [
+{
+"type": "multiEffect",
+"effects": ["drillSteam", "mineImpactWave", "mineImpact"]
+	}]},
+	"itemCapacity": 20,
+	"drillTime": 600,
+	"blockedItem": thorium,
+		"research": {
+    "parent": "solar-bore",
+    "objectives": [
+        {
+            "type": "OnSector",
+            "preset": "cavern"
+        }
+    ]
+}
+}

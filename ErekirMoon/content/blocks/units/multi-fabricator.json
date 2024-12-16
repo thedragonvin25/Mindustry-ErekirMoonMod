@@ -1,0 +1,44 @@
+{
+	"type": UnitFactory,
+	"category": units,
+	  "researchCostMultiplier": 0.05,
+	"requirements": [
+		cobalt / 50,
+		graphite / 50
+	],
+	"consumes": {
+		"power": 2
+	},
+	"description": "Constructs all tier 1 units.",
+	"size": 3,
+	"plans": [
+		{
+			"unit": stell,
+			"requirements": [
+				beryllium / 40,
+				silicon / 50
+			],
+			"time": 2100
+		},
+		{
+			"unit": merui,
+			"requirements": [
+				beryllium / 50,
+				silicon / 70
+			],
+			"time": 2400
+		},
+		{
+			"unit": elude,
+			"requirements": [
+				graphite / 50,
+				silicon / 70
+			],
+			"time": 2400
+		}
+	],
+	"localizedName": "Multi Fabricator",
+					  	"research": {
+"parent": "core-outpost"
+}
+}

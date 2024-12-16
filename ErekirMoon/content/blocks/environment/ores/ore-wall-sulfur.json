@@ -1,0 +1,6 @@
+{
+	"localizedName": Sulfur,
+	"type": OreBlock,
+	"itemDrop": sulfur,
+	"wallOre": true
+}

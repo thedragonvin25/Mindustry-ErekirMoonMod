@@ -1,0 +1,86 @@
+type: ItemTurret
+localizedName: Golem
+description: Fires a long-range missile at enemy targets. Requires large amounts of hydrogen to operate. Missile can be shot down before impact.
+size: 4
+reload: 80
+health: 1600
+range: 385
+category: turret
+rotateSpeed: 0.7
+accurateDelay: false
+shootCone: 1
+predictTarget: false
+shootSound: missileLarge
+coolantMultiplier: 2
+    "shootWarmupSpeed": 0.04,
+    "minWarmup": 0.9,
+consumes: {
+   "liquid": {
+	"liquid": "hydrogen",
+	"optional": false,
+	"update": false,
+	"amount": 0.166667
+	}
+}
+coolant: {
+  type: ConsumeLiquid
+  liquid: water
+  amount: 0.5
+}
+shoot: {
+  type: ShootBarrel
+  shots: 1
+  barrels: 1
+  barrels: [
+	0, -12, 0
+  ]
+}
+ammoPerShot: 6
+ammoTypes: {
+  graphite: {
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
+    spawnUnit: blast-graphite-missile
+  },
+  plastanium: {
+    ammoMultiplier: 1
+    displayAmmoMultiplier: false
+    spawnUnit: blast-plastic-missile
+  }
+}
+requirements: [
+    beryllium/600
+    tungsten/360
+    silicon/320
+    oxide/80
+]
+researchCost: [
+    beryllium/4000
+    graphite/3000
+    silicon/3000
+    oxide/800
+  ]
+  drawer: {
+    type: DrawTurret
+	basePrefix: reinforced-
+    parts: [
+        {
+            type: RegionPart
+            suffix: -barrel
+			mirror: true
+            x: 0
+            moveY: -3
+			moveRot: -16
+            progress: warmup
+        }
+    ]
+}
+research: {
+    parent: "spread"
+    objectives: [
+        {
+            type: "SectorComplete"
+            preset: "holdout"
+        }
+    ]
+}
