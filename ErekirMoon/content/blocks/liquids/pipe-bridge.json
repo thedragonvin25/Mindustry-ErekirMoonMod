@@ -1,0 +1,16 @@
+{
+	"type": DirectionLiquidBridge,
+	"localizedName": "Pipe Bridge",
+"squareSprite": false,
+	"underBullets": true,
+	"description": "Transports liquids over terrain.",
+		  "researchCostMultiplier": 0.1,
+	"requirements": [
+		graphite / 8,
+		cobalt / 20
+	],
+	"category": liquid,
+				  	"research": {
+"parent": "pipe"
+}
+}

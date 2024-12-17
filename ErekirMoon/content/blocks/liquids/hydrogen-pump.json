@@ -1,0 +1,16 @@
+{
+	"localizedName": "Pressure Pump",
+	"size": 2,
+	"type": pump,
+	"requirements": [
+		cobalt / 100,
+		tungsten / 40,
+	],
+		"consumes": {
+		"liquid": hydrogen / 0.025
+	},
+	"description": "DONT DELETE THIS. BREAKS 2 MAPS. DONT USE UNUSED STUFF OH MY GOD",
+	"pumpAmount": 0.3333333333333333,
+	"category": liquid,
+"buildVisibility": hidden
+}
