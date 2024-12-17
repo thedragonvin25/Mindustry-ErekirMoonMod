@@ -1,0 +1,34 @@
+{
+	localizedName: "Quartz Crusher"
+	research: {
+		parent: cliff-reducer
+    objectives: [
+        {
+            type: SectorComplete
+            preset: holdout
+        }
+    ]
+}
+	}
+	requirements: [
+		silicon / 200
+		beryllium / 200
+		graphite / 180
+		tungsten/ 100
+	]
+	drillTime: 60
+	consumes: {
+		power: 4.5
+		liquid: hydrogen / 0.5
+	}
+	size: 3
+	attribute: brick
+	floating: true
+	output: quartz
+	fogRadius: 2
+	researchCostMultiplier: 0.3
+	ambientSound: drill
+	description: "Crushes quartz from crystal clusters. Requires hydrogen and power to operate."
+	category: production
+	type: WallCrafter
+}
