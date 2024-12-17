@@ -1,5 +1,6 @@
 {
 	"localizedName": "Pipe Router",
+"squareSprite": false,
 	"type": LiquidRouter,
 	"requirements": [
 		graphite / 8,
