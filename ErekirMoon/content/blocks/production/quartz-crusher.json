@@ -16,12 +16,12 @@
 		graphite / 180
 		tungsten/ 100
 	]
-	drillTime: 120
+	drillTime: 60
 	consumes: {
 		power: 4.5
-		liquid: hydrogen / 0.00416667
+		liquid: hydrogen / 0.5
 	}
-	size: 2
+	size: 3
 	attribute: brick
 	floating: true
 	output: quartz
