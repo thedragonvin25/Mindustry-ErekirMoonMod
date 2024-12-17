@@ -15,6 +15,7 @@
 	"category": power,
 	"description": "Transmit power to other blocks orthogonally. Stores a small amount of power.",
 	"research": cobalt,
+		  "researchCostMultiplier": 0.1,
 				  	"research": {
 "parent": "core-outpost"
 }
