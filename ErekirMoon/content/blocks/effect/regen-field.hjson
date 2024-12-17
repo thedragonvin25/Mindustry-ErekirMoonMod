@@ -2,6 +2,7 @@
   	"localizedName": "Regen Field",
 		"description": "Repairs damaged structures. Requires hydrogen to operate.",
     "researchCostMultiplier": 0.2,
+"squareSprite": false,
   "health": 550
   "size": 2,
   "range": 110,
