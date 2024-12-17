@@ -6,10 +6,10 @@
 	"health": 500,
 	"category": crafting,
 	"requirements": [
+		cobalt / 250,
 		beryllium / 200,
-		graphite / 100,
-		tungsten / 100,
-		silicon / 250
+		graphite / 150,
+		tungsten / 125
 	],
 		"drawer": {
      "type": "DrawMulti",
@@ -35,18 +35,21 @@
 	"hasLiquids": true,
 	"hasItems": true,
 	"consumes": {
-		"items": [
-			cobalt / 2
+		"liquids": [
+			water / 0.6667
 		],
-		"power": 0.5
+		"items": [
+			beryllium / 2
+		],
+		"power": 2.5
 	},
-	"description": "Concentrates hydrogen from the moisture in the air. Requires cobalt.",
+	"description": "Combines beryllium pebbles with pressurized steam to create hydrogen.",
 	"outputLiquid": hydrogen / 0.1,
 		"research": {
     "parent": "cliff-reducer",
     "objectives": [
         {
-            "type": "SectorComplete",
+            "type": "OnSector",
             "preset": "mesa"
         }
     ]
