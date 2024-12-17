@@ -2,6 +2,7 @@
 	"localizedName": "Collision Drill",
 	"description": "Drills ores on the ground. Does not require power.",
 	  "researchCostMultiplier": 0.15,
+	"squareSprite": false,
 	"type": BurstDrill,
 	"category": production,
 	"size": 2,
