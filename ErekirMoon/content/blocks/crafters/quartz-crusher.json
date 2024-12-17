@@ -5,6 +5,7 @@
 	  "researchCostMultiplier": 0.25,
 	"requirements": [
 		silicon / 80,
+		cobalt/ 250,
 		beryllium / 200,
 		graphite / 180,
 		tungsten/ 100
@@ -34,10 +35,6 @@
         "type": "DrawLiquidRegion",
         "drawLiquid": "hydrogen",
         "suffix": "-liquid"
-      },
-	  {
-        "type": "DrawRegion",
-        "suffix": "-top"
       }
     ]
 },
