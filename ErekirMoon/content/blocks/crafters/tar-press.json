@@ -4,6 +4,7 @@
 	  "researchCostMultiplier": 0.1,
 	"type": GenericCrafter,
 	"category": crafting,
+	"squareSprite": false,
 	"requirements": [
 		cobalt / 20
 	],
