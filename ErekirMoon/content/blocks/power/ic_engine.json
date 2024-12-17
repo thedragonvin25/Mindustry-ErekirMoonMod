@@ -5,6 +5,7 @@
   "description": "Burns oil to generate moderate amounts of power.",
   "health": 1400,
   "size": 3,
+  "squareSprite": false,
   "powerProduction": 5.5,
   "hasLiquids": true,
   "liquidCapacity": 50,
