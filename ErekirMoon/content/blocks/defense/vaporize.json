@@ -3,6 +3,7 @@
   	"localizedName": "Vaporize",
 		"description": "Shoots 3 independent fire jets at enemy targets. Use with caution.",
   "researchCostMultiplier": 0.2,
+"squareSprite": false,
   "size": 3,
   "health": 1400,
   "reload": 65,

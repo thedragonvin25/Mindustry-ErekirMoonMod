@@ -7,6 +7,7 @@ health: 1100
 range: 225
 liquidCapacity: 30
 itemCapacity: 30
+squareSprite: false
 rotateSpeed: 1.5
 coolantMultiplier: 5
 reload: 20
