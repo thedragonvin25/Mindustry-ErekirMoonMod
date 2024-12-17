@@ -3,7 +3,7 @@
   "size": 3,
   	"localizedName": "Multi Refabricator",
 		"description": "Upgrades tier 1 units to tier 2. Requires hydrogen to operate.",
-    "researchCostMultiplier": 0.5,
+    "researchCostMultiplier": 0.2,
   "constructTime": 2700,
   "liquidCapacity": 30,
   "consumes": {
