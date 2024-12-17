@@ -1,34 +1,56 @@
 {
-	localizedName: "Quartz Crusher"
-	research: {
-		parent: cliff-reducer
-    objectives: [
+	"localizedName": "Quartz Crusher",
+	"description": "Crushes quartz from crystal clusters. Requires hydrogen and power to operate.",
+	"squareSprite": false,
+	  "researchCostMultiplier": 0.25,
+	"requirements": [
+		silicon / 80,
+		beryllium / 200,
+		graphite / 180,
+		tungsten/ 100
+	],
+	"size": 3,
+	"type": WallCrafter,
+	"hasItems": true,
+	"hasLiquids": true,
+	"category": crafting,
+	"consumes": {
+		"liquids": [
+			hydrogen / 0.05
+		],
+		"power": 4.5
+	},
+		"drawer": {
+     "type": "DrawMulti",
+	 "drawers": [
+	  {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawRegion",
+		"suffix": "-bottom"
+      },
+	  {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "hydrogen",
+        "suffix": "-liquid"
+      },
+	  {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+},
+	"drillTime": 150,
+	"output": quartz,
+	"attribute": crystal
+	"research": {
+"parent": "cliff-reducer",
+    "objectives": [
         {
-            type: SectorComplete
-            preset: holdout
+            "type": "SectorComplete",
+            "preset": "holdout"
         }
     ]
 }
-	}
-	requirements: [
-		silicon / 200
-		beryllium / 200
-		graphite / 180
-		tungsten/ 100
-	]
-	drillTime: 60
-	consumes: {
-		power: 4.5
-		liquid: hydrogen / 0.5
-	}
-	size: 3
-	attribute: brick
-	floating: true
-	output: quartz
-	fogRadius: 2
-	researchCostMultiplier: 0.3
-	ambientSound: drill
-	description: "Crushes quartz from crystal clusters. Requires hydrogen and power to operate."
-	category: production
-	type: WallCrafter
 }
